@@ -1,183 +1,176 @@
-# JuniorFallPortfolioTemplate
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junior Fall Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-Welcome to your **Junior Fall Portfolio repository**.
+<body>
+  <header class="header">
+    <h1>Quantaeyah Berry</h1>
+    <p>Thomas Edison CTE High School | Junior</p>
+  </header>
 
-This project is where you will turn the work you’ve already curated into a **professional, creative, and personal website** that represents **who you are and what you can do** as a programmer.
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a junior at Thomas Edison CTE High School studying computer science.
+      I am learning how to build websites using HTML and CSS and how to think
+      like a programmer by solving problems and debugging code.
+    </p>
+  </section>
 
-This is not just an assignment — this is a living portfolio you will continue to build throughout junior and senior year.
+  <section class="section">
+    <h2>Portfolio Purpose</h2>
+    <p>
+      This portfolio was created to showcase the projects I completed during
+      my junior fall semester. It shows my progress as a programmer, what I
+      learned from each project, and how my skills have improved over time.
+    </p>
+  </section>
 
----
+  <nav class="nav">
+    <a href="projects.html">View My Projects</a>
+  </nav>
 
-## Purpose of This Portfolio
+  <footer class="footer">
+    <p>© 2026 Quantaeyah Berry</p>
+  </footer>
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-Your portfolio should:
-- Showcase your **best work**
-- Explain **what you learned** and **how you grew**
-- Reflect your **personality, interests, and goals**
-- Be clear, organized, and professional
+<body>
+  <header class="header">
+    <h1>My Curated Projects</h1>
+    <a href="index.html">← Back Home</a>
+  </header>
 
-You already completed the **Portfolio Curator Activity Guide**.  
-This repository is where that content becomes **real**.
+  <!-- PROJECT 1 -->
+  <section class="project">
+    <div class="project-embed">
+      <iframe src="https://editor.p5js.org/" title="Project One"></iframe>
+    </div>
 
----
+    <div class="project-reflection">
+      <h2>Interactive Canvas Project</h2>
+      <p>
+        This project helped me learn how to create drawings using code.
+        I learned how functions work and how small changes in code can
+        affect the entire program. This project improved my confidence
+        with debugging.
+      </p>
+    </div>
+  </section>
 
-## What You Are Building
+  <!-- PROJECT 2 -->
+  <section class="project">
+    <div class="project-embed">
+      <iframe src="https://editor.p5js.org/" title="Project Two"></iframe>
+    </div>
 
-Your site includes:
-- A **Home / About** section
-- Embedded **projects or CFUs**
-- A **written reflection** next to each project
-- Navigation to organize your work
-- A consistent visual style that you customize
+    <div class="project-reflection">
+      <h2>Website Design Project</h2>
+      <p>
+        In this project, I focused on using HTML and CSS together to create
+        a structured webpage. I learned how to organize content, apply
+        styling, and make layouts responsive so they work on different
+        screen sizes.
+      </p>
+    </div>
+  </section>
 
-Each project should answer:
-- What is this project?
-- What skills or concepts did I use?
-- Why does this project matter to me?
+  <footer class="footer">
+    <p>Junior Fall Portfolio</p>
+  </footer>
+</body>
+</html>
 
----
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-## Repository Structure
+body {
+  background-color: #f2f4f7;
+  color: #333;
+}
 
-You should have files similar to this:
-/
-├── index.html (home / about page)
-├── projects.html (project showcase page)
-├── style.css (main stylesheet)
-├── images/ (photos, icons, logos)
-└── README.md (this file)
+.header {
+  background-color: #1f2933;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
 
-Do **not** rename files unless your teacher tells you to.
+.header a {
+  color: #fbbf24;
+  text-decoration: none;
+}
 
----
+.section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
 
-## How to Use the Template
+.nav {
+  text-align: center;
+  margin: 40px;
+}
 
-### 1. Start with Structure
-Do not delete or break the existing HTML structure.
+.nav a {
+  padding: 12px 22px;
+  background: #1f2933;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
 
-You should:
-- Replace placeholder text with **your curated content**
-- Duplicate project blocks when adding new work
-- Keep class names the same unless you know why you’re changing them
+.nav a:hover {
+  background: #fbbf24;
+  color: black;
+}
 
-This template is designed to help you succeed — use it.
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
 
----
+.project-embed,
+.project-reflection {
+  flex: 1 1 400px;
+}
 
-### 2. Add Projects Correctly
+.project-embed iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
 
-Each project uses the same pattern:
-- An embedded project (iframe)
-- A reflection next to it
-- All wrapped in a card
-
-If one project looks good, **all projects should look good**.
-
-Consistency matters.
-
----
-
-### 3. Customize With Intention
-
-You are expected to personalize your portfolio.
-
-Good ways to customize:
-- Colors and background
-- Fonts
-- Images and icons
-- Spacing and layout tweaks
-- Hover effects
-
-Avoid:
-- Fixed widths that break the page
-- Negative margins
-- Random changes without understanding
-- Copying someone else’s design exactly
-
-Your goal is **clean + personal**, not flashy chaos.
-
----
-
-## Creativity Guidelines (Important)
-
-Creative does **not** mean:
-- Hard to read
-- Over-animated
-- Distracting
-- Inconsistent
-
-Creative **does** mean:
-- Thoughtful color choices
-- Clear visual hierarchy
-- Personality through design
-- Pride in your work
-
-Ask yourself:
-> “Does this make my work easier to understand?”
-
-If the answer is yes — you’re on the right track.
-
----
-
-## Technical Expectations
-
-You are expected to:
-- Use **HTML correctly** (nested properly, no missing tags)
-- Use **CSS classes**, not IDs, for repeated elements
-- Keep your site **responsive**
-- Test your site at different screen sizes
-- Make sure all links and embeds work
-
-Broken layouts or missing content will affect your grade.
-
----
-
-## Professional Expectations
-
-This is a **professional portfolio**.
-
-That means:
-- No inappropriate language or images
-- Reflections written in complete sentences
-- Content you would be comfortable showing to:
-  - A teacher
-  - A mentor
-  - A future employer
-
----
-
-## Getting Help
-
-If something breaks:
-1. Check for missing closing tags
-2. Check indentation
-3. Check your file paths
-4. Ask yourself *what changed* right before it broke
-
-If you’re stuck:
-- Ask a question
-- Show your code
-- Be specific
-
-Debugging is part of being a programmer.
-
----
-
-## Final Reminder
-
-This portfolio represents:
-- Your skills
-- Your growth
-- Your identity as a developer
-
-Take your time.
-Be intentional.
-Make it yours.
-
-You are building something you will be proud to show.
-
-Good luck — and have fun with it.
-
-
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: #e5e7eb;
+}
